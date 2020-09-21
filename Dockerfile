@@ -1,6 +1,6 @@
 FROM python:3.8.3-alpine3.12
 
-LABEL maintainer="eshaan7bansal@gmail.com"
+# LABEL maintainer="eshaan7bansal@gmail.com"
 
 # Env
 RUN export DATABASE_URL="postgres://${DB_USER}:${DB_PASSWORD}@postgres:${DB_PORT}/${DB_NAME}" \

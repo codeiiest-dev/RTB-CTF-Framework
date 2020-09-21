@@ -1,23 +1,22 @@
 ---
-env: SKIP_INTERPRETER=true
+branches:
+ only:
+ - master
 
-#branches:
-#  only:
-#  - master
-  
 language: python
-python: 
+python:
   - "3.8.2"
 
 env:
   global:
+  - SKIP_INTERPRETER=true
   - DATABASE_URL="postgres://postgres:@localhost:5432/travis_ci_test"
-services: 
+services:
   - postgresql
 before_install:
   - psql -c 'create database travis_ci_test;' -U postgres
-  
-install: 
+
+install:
   - "pip install -r src/requirements.txt"
   - "python src/create_db.test.py"
 

@@ -41,12 +41,12 @@ def populate_websites():
     from FlaskRTBCTF.main.models import Website
 
     web1 = Website(
-        name="Official Abs0lut3Pwn4g3 Website", url="https://Abs0lut3Pwn4g3.github.io/",
+        name="CodeIIEST Website", url="https://codeiiest.codes",
     )
-    web2 = Website(name="Twitter", url="https://twitter.com/Abs0lut3Pwn4g3")
+    web2 = Website(name="Facebook", url="https://www.facebook.com/CodeIIEST")
     web3 = Website(
         name="Source Code on GitHub",
-        url="https://github.com/Abs0lut3Pwn4g3/RTB-CTF-Framework",
+        url="https://github.com/codeiiest-dev/RTB-CTF-Framework",
     )
 
     db.session.add(web1)
@@ -70,9 +70,9 @@ def populate_challs():
     ch1 = Challenge(
         title="Dummy challenge. Edit/Delete this.",
         description="blah blah",
-        flag="CTF{test}",
+        flag="CTF{r1ck_r0lls}",
         points="50",
-        url="https://ch1.example.com/",
+        url="https://www.youtube.com/watch?v=oHg5SJYRHA0",
         difficulty="easy",
         category=Category.query.get(2),
         tags=[Tag.query.get(1), Tag.query.get(2)],

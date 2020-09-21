@@ -26,7 +26,7 @@ class Settings(ReprMixin, db.Model):
     dummy = db.Column(db.Boolean, nullable=False, default=True)
     ctf_name = db.Column(db.String(64), nullable=False, default="RootTheBox CTF")
     organization_name = db.Column(
-        db.String(80), nullable=False, default="Abs0lut3Pwn4g3"
+        db.String(80), nullable=False, default="codeiiest-dev"
     )
 
     from_date = db.Column(db.Date, nullable=True, default=date.today())
@@ -58,7 +58,7 @@ class Website(ReprMixin, db.Model):
     url = db.Column(
         db.TEXT(),
         nullable=False,
-        default="https://github.com/Abs0lut3Pwn4g3/RTB-CTF-Framework",
+        default="https://github.com/codeiiest-dev/RTB-CTF-Framework",
     )
     name = db.Column(db.TEXT(), nullable=False, default="Source code on GitHub")
 

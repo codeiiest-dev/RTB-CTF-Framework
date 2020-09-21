@@ -11,7 +11,7 @@
 1. Git clone the repo and `cd ` into it
 
 ```bash
-$ git clone https://github.com/abs0lut3pwn4g3/RTB-CTF-Framework
+$ git clone https://github.com/codeiiest-dev/RTB-CTF-Framework
 $ cd RTB-CTF-Framework/
 ```
 2. Create `virtual environment` to deal with dependencies and requirements.
@@ -35,7 +35,7 @@ $ cd src/
     - For development server,
 
     ```bash
-    [venv]$ python run.py 
+    [venv]$ python run.py
     ```
 
     - Production server
